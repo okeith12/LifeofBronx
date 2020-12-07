@@ -145,8 +145,13 @@ header nav {
 }
 a.btn-down{
  color: var(--light-color);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
  position: absolute;
  bottom: 20px;
+ left: 48%;
  font-size: 20px;
  border: 2px solid var(--light-color);
  border-radius: 40px;
