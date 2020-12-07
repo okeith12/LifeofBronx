@@ -1,36 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Raleway&display=swap");
 
 /* Global Styles */
 :root {
-  --primary-color: #dc3545;
-  --dark-color: #333333;
-  --light-color: #f4f4f4;
-  --danger-color: #dc3545;
-  --success-color: #28a745;
+  --primary-color: #0080af;
+  --secondary-color: #5899b6;
+  --light-color: #f0fbff;
+  --border-color: #ffeacd;
+  --highlight-color: #eee8a9;
+  --active-color: #35424a;
 }
-
+/*GLOBAL*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-body{
-    font-family: 'Lora', serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    background-color: #fff;
-    color: #333;
+html {
+  scroll-behavior: smooth;
 }
+body {
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+}
+
 a {
-    color: var(--primary-color);
-    text-decoration: none;
-    
-  }
-  
-  a:hover {
-    color: #666;
-  }
-  
-  ul {
-    list-style: none;
-  }
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  position: fixed;
+  min-height: 70px;
+  width: 100%;
+  transition: background 250ms ease-in;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+header .site-logo {
+  float: left;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+header .site-logo h1 {
+  margin: 0;
+}
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+/* NAV */
+.nav-menu {
+  margin: 0;
+  padding: 0;
+}
+.nav-item {
+  float: left;
+  display: inline;
+  padding: 0px 20px 0px 20px;
+}
+.nav-link {
+  transition: all 0.3s ease 0s;
+}
+.nav-link:hover {
+  transition: all 0.3s ease 0.1s;
+}
+
+/* HERO */
+.hero {
+  background-image: url("./img/tempbronxhero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  color: white;
+  padding: 50vh 0;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 50px;
+}
+.hero p {
+  font-size: 20px;
+}
+/* About */
+#section-about {
+  margin-top: 40px;
+}
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+.btn-primary {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn-primary:hover {
+  background: var(--secondary-color);
+  transition: all 0.2s ease-in 0s;
+}
