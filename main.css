@@ -62,6 +62,10 @@ p {
   right: 0;
   z-index: 999;
 }
+.nav-scrolled {
+  background: var(--active-color);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
 header .site-logo {
   float: left;
   margin-bottom: 10px;
@@ -82,7 +86,8 @@ header nav {
 .nav-item {
   float: left;
   display: inline;
-  padding: 0px 20px 0px 20px;
+  padding: 10px 20px 0px 20px;
+  font-size: 18px;
 }
 .nav-link {
   transition: all 0.3s ease 0s;
@@ -111,7 +116,7 @@ header nav {
 }
 /* About */
 #section-about {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 /* Buttons */
 .btn {
