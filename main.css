@@ -143,6 +143,18 @@ header nav {
   background: var(--secondary-color);
   transition: all 0.2s ease-in 0s;
 }
-.scroll-up{
- 
+a.btn-down{
+ color: var(--light-color);
+ position: absolute;
+ bottom: 20px;
+ font-size: 20px;
+ border: 2px solid var(--light-color);
+ border-radius: 40px;
+ height: 40px;
+ width: 40px;
+ line-height: 40px;
+}
+a.btn-down:hover{
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
