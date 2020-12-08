@@ -108,7 +108,8 @@ header nav {
 #intro .grid {
 }
 .intro-img img {
-  width: 600px;
+  max-width: 100%;
+  height: auto;
 }
 .intro-text {
   padding: 20px;
