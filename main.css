@@ -106,6 +106,7 @@ header nav {
   text-transform: uppercase;
 }
 #intro .grid {
+  gap: 30px;
 }
 .intro-img img {
   max-width: 100%;
