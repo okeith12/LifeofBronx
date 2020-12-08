@@ -82,7 +82,7 @@ header nav {
   background-position: center;
   background-blend-mode: multiply;
   opacity: 0.98;
-  color: white;
+  color: var(--light-color);
   padding: 50vh 0;
   height: 100vh;
   display: flex;
