@@ -118,6 +118,10 @@ header nav {
 .intro-text p {
   padding-top: 10px;
 }
+/* Carousel */
+.owl-carousel {
+  margin-top: 5vmax;
+}
 /* QUote */
 .quote {
   margin-top: 5vmax;
