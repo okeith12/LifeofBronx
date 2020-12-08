@@ -5,6 +5,7 @@
   --primary-color: #0080af;
   --secondary-color: #5899b6;
   --light-color: #f0fbff;
+  --bg-color: #f6f7fc;
   --border-color: #ffeacd;
   --highlight-color: #eee8a9;
   --active-color: #35424a;
@@ -22,30 +23,8 @@ body {
   font-family: "Lora", serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: var(--bg-color);
   color: #333;
-}
-.container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
-ul {
-  list-style: none;
-}
-
-a {
-  color: var(--light-color);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--secondary-color);
-  transition: all 0.2s ease-in-out;
-}
-
-p {
-  font-family: "Raleway", sans-serif;
 }
 
 /* Header */
@@ -102,6 +81,7 @@ header nav {
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
+  opacity: 0.98;
   color: white;
   padding: 50vh 0;
   height: 100vh;
@@ -115,8 +95,63 @@ header nav {
   font-size: 20px;
 }
 /* About */
-#section-about {
-  margin-top: 60px;
+#intro {
+  margin-top: 9vmax;
+  height: 100vh;
+  color: var(--active-color);
+  position: relative;
+}
+#intro h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+#intro .grid {
+}
+.intro-img img {
+  width: 600px;
+}
+.intro-text {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+.intro-text p {
+  padding-top: 10px;
+}
+/* QUote */
+.quote {
+  margin-top: 5vmax;
+}
+/* Utilites */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 /* Buttons */
 .btn {
@@ -133,33 +168,37 @@ header nav {
   outline: none;
 }
 .btn-primary {
-  background: var(--primary-color);
-  border-radius: 10px;
+  border: 2px solid;
+  font-size: 16px;
+  background: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 .btn:hover {
   opacity: 0.8;
 }
 .btn-primary:hover {
   background: var(--secondary-color);
-  transition: all 0.2s ease-in 0s;
+  transition: background 0.2s ease-in 0s;
+  color: var(--light-color);
 }
-a.btn-down{
- color: var(--light-color);
- display: flex;
- justify-content: center;
- align-items: center;
- text-align: center;
- position: absolute;
- bottom: 20px;
- left: 48%;
- font-size: 20px;
- border: 2px solid var(--light-color);
- border-radius: 40px;
- height: 40px;
- width: 40px;
- line-height: 40px;
+a.btn-down {
+  color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 48%;
+  font-size: 20px;
+  border: 2px solid var(--light-color);
+  border-radius: 40px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
 }
-a.btn-down:hover{
+a.btn-down:hover {
   border-color: var(--secondary-color);
   color: var(--secondary-color);
 }
