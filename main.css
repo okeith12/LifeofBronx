@@ -77,11 +77,11 @@ header nav {
 
 /* HERO */
 .hero {
-  background-image: url("./img/tempbronxhero.jpg");
+  background-image: url("./img/finalbronx1.webp");
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-blend-mode: multiply;
-  opacity: 0.98;
+  background-repeat: no-repeat;
   color: var(--light-color);
   padding: 50vh 0;
   height: 100vh;
