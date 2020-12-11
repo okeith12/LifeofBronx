@@ -77,9 +77,9 @@ header .mynav {
 
 /* HERO */
 .hero {
-  background-image: url("./img/finalbronx1.webp");
+  background-image: url("./img/tempbronxhero.jpg");
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   color: var(--light-color);
@@ -215,6 +215,7 @@ header .mynav {
   color: var(--light-color);
   height: 55vh;
 }
+
 .quote .intro-quote {
   display: flex;
   justify-content: center;
