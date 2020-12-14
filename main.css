@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;500&display=swap");
 
 /* Global Styles */
 :root {
@@ -235,6 +235,10 @@ header a {
 footer.footer {
   margin-top: auto;
 }
+footer.footer p {
+  text-transform: uppercase;
+  font-size: calc((2.125 - 1) * 1.5vh);
+}
 footer.footer a {
   color: var(--primary-color);
 }
@@ -312,7 +316,7 @@ a:hover {
 }
 
 p {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 /* Text sizes */
 .lead {
