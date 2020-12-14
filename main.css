@@ -99,7 +99,7 @@ header a {
 /* About */
 #intro {
   margin-top: 9vmax;
-  min-height: 65vh;
+  min-height: 70vh;
   color: var(--active-color);
   position: relative;
 }
@@ -136,6 +136,7 @@ header a {
   align-items: center;
   text-align: center;
   padding: 20px;
+  text-transform: uppercase;
 }
 .carousel {
   overflow: hidden;
@@ -213,7 +214,7 @@ header a {
   margin-top: 6vmax;
   background-color: var(--active-color);
   color: var(--light-color);
-  height: 50vh;
+  height: 60vh;
 }
 
 .quote .intro-quote {
