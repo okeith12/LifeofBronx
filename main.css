@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Montserrat:wght@400;500&display=swap");
 
 /* Global Styles */
 :root {
@@ -95,7 +95,27 @@ header a {
   display: flex;
   text-align: center;
 }
-
+.about-hero {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 20vh 0;
+  height: 50vh;
+  display: flex;
+  text-align: center;
+}
+.about-hero h1 {
+  color: transparent;
+  font-weight: 900;
+  font-size: 6vw;
+  text-transform: uppercase;
+  background-image: url("./img/graydog.jpg");
+  background-size: cover;
+  background-position: 30% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 /* About */
 #intro {
   margin-top: 9vmax;
