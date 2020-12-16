@@ -266,9 +266,11 @@ header a {
   margin: 0 auto;
   flex-wrap: wrap;
   flex-direction: column;
-  max-width: 900px;
+  max-width: 70%;
+  /* MESS WITH MAX WIDTH TO CHANGE PICTURE SIZE ON TIMELINE FOR DESKTOP */
   position: relative;
 }
+
 .timeline ul li {
   width: 80%;
   position: relative;
@@ -285,11 +287,14 @@ header a {
 .timeline ul li:nth-child(odd) {
   float: left;
   clear: right;
+  transform: translateX(-25%);
 }
 .timeline ul li:nth-child(even) {
   float: right;
   clear: left;
+  transform: translateX(25%);
 }
+
 .timeline__content-title {
   font-weight: normal;
   font-size: 5rem;
@@ -415,6 +420,9 @@ footer.footer a:hover {
   .footer .grid {
     grid-template-columns: 1fr;
   }
+  .timeline {
+    max-width: 100%;
+  }
   .timeline:before {
     left: 40px;
   }
@@ -429,6 +437,16 @@ footer.footer a:hover {
 
   .timeline__content-title {
     padding: 0 10px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(0);
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(0);
   }
 }
 /* Mobile */
@@ -484,9 +502,7 @@ footer.footer a:hover {
     transition: 0.4s;
     color: var(--secondary-color);
   }
-  .timeline__img {
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
-  }
+
   .timeline__content-desc {
     font-size: 16px;
     line-height: 30px;
