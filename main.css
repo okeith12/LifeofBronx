@@ -96,6 +96,20 @@ header a {
   display: flex;
   text-align: center;
 }
+.hero h1 {
+  animation: pop-in 0.4s ease-out forwards;
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 .about-hero {
   float: left;
   clear: both;
