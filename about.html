@@ -38,15 +38,17 @@
         <section class="about-hero">
             <div class="container">
                 <h1 class="xl">Bronx's Journey</h1>
-                <p class="md">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quibusdam animi et. Ab eius, explicabo voluptatum quo voluptas non beatae magni quas aspernatur, alias, consequatur incidunt natus vitae dolore quasi!</p>
+              
               </div>
         </section>
         <section class="main-timeline">
-            <div class="container">
+            <div class="container timeline-container">
+                <p class="md">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quibusdam animi et. Ab eius, explicabo voluptatum quo voluptas non beatae magni quas aspernatur, alias, consequatur incidunt natus vitae dolore quasi!</p>
+                <div class="timeline">
                 <ul>
                     <li>
                         <div class="timeline-item" data-text="NEW TIMELINE DESIGN">
-                            <div class="timeline__content"><img class="timeline__img" src="./img/testdog.jpg"/>
+                            <div class="timeline__content"><img class="timeline__img" src="./img/graydog.jpg"/>
                               <h2 class="timeline__content-title">1905</h2>
                               <p class="timeline__content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cupiditate id maiores ab ad repellendus explicabo eum quo nihil veniam architecto dicta, veritatis nesciunt dolor minus temporibus aliquam incidunt ratione!Odit pariatur beatae quaerat vel similique illum ipsam accusamus sit dolores, quae at, blanditiis, rem doloremque non autem corporis impedit delectus temporibus voluptas. Eos totam assumenda sint praesentium modi laborum.</p>
                             </div>
@@ -54,7 +56,7 @@
                     </li>
                     <li>
                         <div class="timeline-item" data-text="NEW TIMELINE DESIGN">
-                            <div class="timeline__content"><img class="timeline__img" src="./img/testdog.jpg"/>
+                            <div class="timeline__content"><img class="timeline__img" src="./img/finalbronx.webp"/>
                               <h2 class="timeline__content-title">1905</h2>
                               <p class="timeline__content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cupiditate id maiores ab ad repellendus explicabo eum quo nihil veniam architecto dicta, veritatis nesciunt dolor minus temporibus aliquam incidunt ratione!Odit pariatur beatae quaerat vel similique illum ipsam accusamus sit dolores, quae at, blanditiis, rem doloremque non autem corporis impedit delectus temporibus voluptas. Eos totam assumenda sint praesentium modi laborum.</p>
                             </div>
@@ -85,6 +87,7 @@
                         </div>
                     </li>
                 </ul>
+                </div>
             </div>
         </section>
     <!-- Footer -->
@@ -108,5 +111,41 @@
       </div>
     </footer>
     <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        (function($) {
+      $.fn.timeline = function() {
+        var selectors = {
+          id: $(this),
+          item: $(this).find(".timeline-item"),
+          activeClass: "timeline-item--active",
+          img: ".timeline__img"
+        };
+        selectors.item.eq(0).addClass(selectors.activeClass);
+       
+        var itemLength = selectors.item.length;
+        $(window).scroll(function() {
+          var max, min;
+          var pos = $(this).scrollTop();
+          selectors.item.each(function(i) {
+            min = $(this).offset().top;
+            max = $(this).height() + $(this).offset().top;
+            var that = $(this);
+            if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+              selectors.item.removeClass(selectors.activeClass);
+              
+              selectors.item.last().addClass(selectors.activeClass);
+            } else if (pos <= max - 40 && pos >= min) {
+             
+              selectors.item.removeClass(selectors.activeClass);
+              $(this).addClass(selectors.activeClass);
+            }
+          });
+        });
+      };
+    })(jQuery);
+    
+    $(".timeline-container").timeline();
+    </script>
   </body>
 </html>
