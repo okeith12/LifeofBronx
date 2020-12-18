@@ -435,8 +435,8 @@ header a {
 }
 .family__card {
   margin: 1.2rem;
-  height: 525px;
-  width: 400px;
+  height: 450px;
+  width: 300px;
   border-radius: 4px;
   background-image: linear-gradient(
       to bottom,
@@ -467,12 +467,12 @@ header a {
 .family__card h2 {
   position: absolute;
   top: 350px;
-  left: 30px;
+  left: 40px;
 }
 .family__card p {
   position: absolute;
   top: 400px;
-  left: 30px;
+  left: 20px;
 }
 .family__card:hover {
   transform: scale(1.095);
