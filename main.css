@@ -5,7 +5,7 @@
   --primary-color: #0080af;
   --secondary-color: #5899b6;
   --light-color: #f0fbff;
-  --footer-color: #acacac;
+  --footer-color: #141414;
   --bg-color: #dadada;
   --border-color: #ffeacd;
   --highlight-color: #eee8a9;
@@ -47,8 +47,18 @@ body {
   z-index: 999;
 }
 .nav-scrolled {
-  background: var(--active-color);
+  background: var(--footer-color);
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  min-height: 70px;
+  width: 100%;
+  transition: background 250ms ease-in;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
 header .site-logo {
   float: left;
@@ -403,16 +413,111 @@ header a {
   content: "";
   margin-top: 5vmax;
 }
-/* Footer */
-footer {
-  background-color: var(--footer-color);
+
+/* FAMILY */
+
+.family {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin-top: 4vh;
 }
+.family h1 {
+  background-size: 100%;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+.service-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.family__card {
+  margin: 1.2rem;
+  height: 525px;
+  width: 400px;
+  border-radius: 4px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("./img/testdog.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.family__card:nth-child(2) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("./img/tempbronxhero.jpg");
+}
+.family__card:nth-child(3) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("./img/realbronxhero.jpg");
+}
+.family__card h2 {
+  position: absolute;
+  top: 350px;
+  left: 30px;
+}
+.family__card p {
+  position: absolute;
+  top: 400px;
+  left: 30px;
+}
+.family__card:hover {
+  transform: scale(1.095);
+  transition: 0.2s ease-in;
+}
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+.video-section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.video-section .video-nav {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer */
+
 footer.footer {
+  background-color: var(--footer-color);
   margin-top: auto;
 }
 footer.footer p {
   text-transform: uppercase;
   font-size: calc((2.125 - 1) * 1.5vh);
+}
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 footer.footer a {
   color: var(--primary-color);
@@ -420,14 +525,11 @@ footer.footer a {
 footer.footer a:hover {
   color: var(--dark-color);
 }
-.footer .social a {
-  margin: 0 10px;
-}
 
 /* MEDIA */
 
 /* Tablets */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   #hero h1,
   .about-hero h1 {
     font-size: 8vw;
@@ -464,6 +566,16 @@ footer.footer a:hover {
     float: right;
     clear: left;
     transform: translateX(0);
+  }
+  .family {
+    height: 100%;
+  }
+  .family h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .footer nav {
+    justify-content: flex-start;
   }
 }
 /* Mobile */
@@ -526,6 +638,19 @@ footer.footer a:hover {
     text-align: center;
     color: var(--secondary-color);
   }
+  .family {
+    height: 100%;
+  }
+
+  .family h1 {
+    font-size: 1.2rem;
+  }
+  .family__card {
+    max-width: 100%;
+    width: 50vh;
+    min-height: auto;
+    background-position: center;
+  }
 }
 
 /* Utilites */
@@ -533,6 +658,7 @@ footer.footer a:hover {
   width: 80%;
   margin: auto;
   overflow: hidden;
+  flex-wrap: wrap;
 }
 ul {
   list-style: none;

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The life of Bronx was filled with joy and happiness. Unforutantly, we had to let our angel go to heaven, but as the saying goes 'Heroes are remembered, but legends never die.'Bronx lives on through us and this site cements our love!"
+    />
+    <meta
+      name="keywords"
+      content="pet,pets,dog,dogs,bronx,love,happy,legends never die, life"
+    />
+    <meta name="author" content="Percyus" />
+    <script
+      src="https://kit.fontawesome.com/56cc5984b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>The Life of Bronx</title>
+    <link rel="stylesheet" href="main.css" />
+    
+    <script
+      type="text/javascript"
+      src="jquery-11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="unitegallery.min.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="unite-gallery.css"
+      type="text/css"
+    />
+
+    <script
+      type="text/javascript"
+      src="ug-theme-tiles.js"
+    ></script>
+    
+  </head>
+  <body>
+    <header class="nav-scrolled">
+      <div class="container">
+        <h1>
+          <a href="index.html" class="site-logo">BR<i class="fas fa-paw"></i>NX</a>
+        </h1>
+        <nav class="mynav">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+       <section class="video-section">
+        <div class="container"> 
+            <video id="slider" autoplay muted loop controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <ul class="video-nav">
+            
+            <li> 
+            <video src="video.mp4">
+            </video>
+             </li>
+             <li> 
+                <video src="video.mp4">
+                </video>
+                 </li>
+        
+                 <li> 
+                    <video src="video.mp4">
+                    </video>
+                     </li>
+                
+        
+          
+            
+        </ul>
+    </div>
+       </section>
+       <section>
+           <div class="container">
+
+                <h1>TITLE</h1>
+
+
+                <div id="gallery1"  style="display: none">
+                    <a href="/img/blackdoghero.jpg">
+                        <img
+                          alt=""
+                          src="/img/blackdoghero.jpg"
+                          data-image="/img/blackdoghero.jpg"
+                          data-description="Those are keys"
+                          style="display: none"
+                        />
+                      </a>
+                      <a href="/img/blackdoghero.jpg">
+                        <img
+                          alt="Keys"
+                          src="/img/graydog.jpg"
+                          data-image="/img/graydog.jpg"
+                          data-description="Those are keys"
+                          style="display: none"
+                        />
+                      </a>
+                      <a href="/img/blackdoghero.jpg">
+                        <img
+                          alt="Keys"
+                          src="/img/finalbronx.jpg"
+                          data-image="/img/finalbronx.jpg"
+                          data-description="Those are keys"
+                          style="display: none"
+                        />
+                      </a>
+                      <a href="/img/blackdoghero.jpg">
+                        <img
+                          alt="Keys"
+                          src="/img/blackdoghero.jpg"
+                          data-image="/img/blackdoghero.jpg"
+                          data-description="Those are keys"
+                          style="display: none"
+                        />
+                      </a>
+                      <a href="/img/blackdoghero.jpg">
+                        <img
+                          alt="Keys"
+                          src="/img/blackdoghero.jpg"
+                          data-image="/img/blackdoghero.jpg"
+                          data-description="Those are keys"
+                          style="display: none"
+                        />
+                      </a>
+                    
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           </div>
+       </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container grid">
+        <div>
+          <h1>
+            <a href="#" class="site-logo">BR<i class="fas fa-paw"></i>NX</a>
+          </h1>
+          <p class="sm">&copy; 2020 Percyus. All Rights Reserved</p>
+        </div>
+        <nav>
+          <ul>
+            <li class"md">LINKS</li>
+            <li><a href="" class="nav-link">About</a></li>
+            <li>
+              <a href="" class="nav-link">Gallery</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+   
+ 
+     <script type="text/javascript">
+        jQuery(document).ready(function () {
+          jQuery("#gallery1").unitegallery({
+            theme_navigation_type: "arrows",
+            tile_enable_image_effect: true,
+            tile_image_effect_reverse: true,
+            tile_image_effect_type: "bw",
+            tiles_max_columns: 4,
+          });
+        });
+      </script>
+  </body>
+</html>
