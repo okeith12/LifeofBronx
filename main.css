@@ -425,16 +425,17 @@ header a {
 }
 .family h1 {
   background-size: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: var(--primary-color);
 }
 .service-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  overflow: visible;
 }
 .family__card {
-  margin: 1.2rem;
+  margin: 0.5rem;
   height: 450px;
   width: 300px;
   border-radius: 4px;
@@ -580,7 +581,7 @@ footer.footer a:hover {
 /* MEDIA */
 
 /* Tablets */
-@media (max-width: 900px) {
+@media (max-width: 1280px) {
   #hero h1,
   .about-hero h1 {
     font-size: 8vw;
