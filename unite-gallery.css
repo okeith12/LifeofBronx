@@ -105,7 +105,7 @@
   height: 35px;
   width: 32px;
   height: 32px;
-  background-image: url("../images/loader_skype_trans.gif");
+  background-image: url("./img/gui/loader_skype_trans.gif");
   background-repeat: no-repeat;
 }
 
@@ -183,7 +183,7 @@
 }
 
 .ug-slider-preloader.ug-loader3.ug-loader-black {
-  background-image: url("../images/loader-black3.gif");
+  background-image: url("./img/gui/loader-black3.gif");
 }
 
 .ug-slider-preloader.ug-loader4 {
@@ -251,7 +251,7 @@
 .ug-slider-wrapper .ug-button-videoplay.ug-type-square {
   width: 86px;
   height: 66px;
-  background-image: url("../images/play-button-square.png");
+  background-image: url("./img/gui/play-button-square.png");
   background-position: 0px -66px;
 }
 
@@ -798,14 +798,14 @@ img.ug-sepia-effect {
   width: 50px;
   height: 55px;
   background-repeat: no-repeat;
-  background-image: url("../images/lightbox-arrow-left.png");
+  background-image: url("./img/gui/lightbox-arrow-left.png");
   background-position: 0px 0px;
   z-index: 3;
   cursor: pointer;
 }
 
 .ug-lightbox .ug-lightbox-arrow-right {
-  background-image: url("../images/lightbox-arrow-right.png");
+  background-image: url("./img/gui/lightbox-arrow-right.png");
 }
 
 .ug-lightbox .ug-lightbox-button-close {
@@ -813,7 +813,7 @@ img.ug-sepia-effect {
   width: 36px;
   height: 36px;
   background-repeat: no-repeat;
-  background-image: url("../images/lightbox-icon-close.png");
+  background-image: url("./img/gui/lightbox-icon-close.png");
   background-position: 0px 0px;
   z-index: 4;
   cursor: pointer;
