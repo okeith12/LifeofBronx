@@ -25,7 +25,13 @@ body {
   font-family: "Lora", serif;
   font-size: 1rem;
   line-height: 1.6;
+  background: url("./img/bluebonnet.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-color: var(--bg-color);
+
+  background-position: center;
   color: #333;
   display: flex;
   flex-direction: column;
