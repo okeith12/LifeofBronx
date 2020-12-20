@@ -116,6 +116,11 @@ header a {
   text-align: center;
 }
 .hero h1 {
+  color: var(--light-color);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   animation: pop-in 0.4s ease-out forwards;
 }
 
@@ -123,14 +128,13 @@ header a {
   float: left;
   clear: both;
   width: 100%;
-  padding: 20vh 0;
   height: 80vh;
   background: url("./img/blackdoghero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-blend-mode: multiply;
-  /* clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0% 70%); */
+   clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0% 70%); 
 }
 .about-hero h1 {
   color: var(--light-color);
@@ -526,7 +530,7 @@ header a {
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
-  animation: pop-in 0.4s ease-out forwards;
+  animation: fade 0.4s ease-in;
 }
 
 .video-section .video-nav {
@@ -616,8 +620,8 @@ footer.footer a:hover {
 /* Tablets */
 @media (max-width: 800px) {
   #hero h1,
-  .about-hero h1 {
-    font-size: 8vw;
+  .about-hero h1,.video-text h1 {
+    font-size: 9vw;
   }
   .grid,
   #intro .grid,
@@ -699,13 +703,8 @@ footer.footer a:hover {
   }
   header .site-logo,
   #hero h1 {
-    float: center;
     text-align: center;
     width: 100%;
-  }
-  #hero h1,
-  .about-hero h1 {
-    font-size: 8vw;
   }
 
   .carousel .carousel-item {
