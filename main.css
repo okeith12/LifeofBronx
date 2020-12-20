@@ -642,7 +642,7 @@ footer.footer a:hover {
 @media (max-width: 800px) {
   #hero h1,
   .about-hero h1,.video-text h1 {
-    font-size: 9vw;
+    font-size: 8vw;
   }
   .grid,
   #intro .grid,
