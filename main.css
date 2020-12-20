@@ -191,8 +191,11 @@ header a {
   overflow: hidden;
   position: relative;
   height: 100vh;
+  
 }
-
+.owl-carousel .grid{
+  grid-template-columns: 1fr;
+}
 .owl-carousel h2 {
   display: flex;
   justify-content: center;
