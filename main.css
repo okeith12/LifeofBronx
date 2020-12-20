@@ -173,10 +173,21 @@ header a {
   margin: 10px;
   text-align: center;
 }
+.intro-text h2{
+  font-size: 30px;
+}
 .intro-text p {
   padding-top: 10px;
   line-height: 1.5em;
   white-space: wrap;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: var(--secondary-color);
+  font-weight: normal;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /* Carousel */
@@ -310,7 +321,17 @@ header a {
   /* MESS WITH MAX WIDTH TO CHANGE PICTURE SIZE ON TIMELINE FOR DESKTOP */
   position: relative;
 }
-
+.timeline-container p{
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: var(--secondary-color);
+  font-weight: normal;
+  line-height: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .timeline ul li {
   width: 80%;
   position: relative;
