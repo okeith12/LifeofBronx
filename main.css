@@ -613,7 +613,7 @@ footer.footer a {
   color: var(--primary-color);
 }
 footer.footer a:hover {
-  color: var(--dark-color);
+  color: var(--secondary-color);
 }
 @keyframes pop-in {
   0% {
