@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Montserrat:wght@400;500&display=swap");
 
 /* Global Styles */
 :root {
@@ -95,6 +95,7 @@ header a {
 .nav-link {
   text-transform: uppercase;
   transition: all 0.3s ease 0s;
+  font-weight: 700;
 }
 
 .nav-link:hover {
