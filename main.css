@@ -323,10 +323,12 @@ header a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: calc(120vmax / 10);
+  padding-top: calc(110vmax / 10);
   padding-bottom: calc(75vmax / 10);
 }
 .quote .intro-quote blockquote {
+  top: 50%;
+  left: 50%;
   font-size: 30px;
   line-height: 1em;
   width: 100% !important;
@@ -540,7 +542,7 @@ header a {
 .video-section {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -553,7 +555,7 @@ header a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center 40%;
   opacity: 0.8;
 }
 #overlay {
@@ -577,7 +579,7 @@ header a {
 
 .video-section .video-nav {
   position: absolute;
-  bottom: 40px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
