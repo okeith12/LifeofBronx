@@ -10,6 +10,7 @@
   --border-color: #ffeacd;
   --highlight-color: #eee8a9;
   --active-color: #35424a;
+  --text-color: #060707;
 }
 /*GLOBAL*/
 * {
@@ -159,7 +160,7 @@ header a {
 #intro {
   margin-top: 9vmax;
   min-height: 70vh;
-  color: var(--footer-color);
+  color: var(--text-color);
   position: relative;
 }
 #intro h1 {
@@ -177,6 +178,7 @@ header a {
 }
 .intro-text h2 {
   font-size: 30px;
+  color: var(--text-color);
 }
 .intro-text p {
   padding-top: 10px;
@@ -185,7 +187,7 @@ header a {
   margin: 0;
   padding-bottom: 20px;
   font-size: 20px;
-  color: black;
+  color: var(--text-color);
   font-weight: normal;
   justify-content: center;
   align-items: center;
@@ -378,7 +380,7 @@ header a {
   margin: 0;
   padding-bottom: 20px;
   font-size: 20px;
-  color: var(--footer-color);
+  color: var(--text-color);
   font-weight: normal;
   line-height: 25px;
   justify-content: center;
@@ -386,7 +388,7 @@ header a {
   text-align: center;
 }
 .timeline-container p {
-  color: black;
+  color: var(--text-color);
 }
 .timeline-item {
   padding: 40px 0;
@@ -916,7 +918,7 @@ footer {
     font-size: 16px;
     line-height: 30px;
     text-align: center;
-    color: var(--primary-color);
+    color: black;
     justify-content: center;
     width: 100%;
   }
