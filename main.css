@@ -148,7 +148,7 @@ header a {
   animation: fade 0.4s ease-in;
 }
 .about-hero p {
-  color: var(--footer-color);
+  color: black;
   line-height: 1em;
   width: 100% !important;
   display: flex;
@@ -185,7 +185,7 @@ header a {
   margin: 0;
   padding-bottom: 20px;
   font-size: 20px;
-  color: var(--footer-color);
+  color: black;
   font-weight: normal;
   justify-content: center;
   align-items: center;
@@ -386,7 +386,7 @@ header a {
   text-align: center;
 }
 .timeline-container p {
-  color: var(--footer-color);
+  color: black;
 }
 .timeline-item {
   padding: 40px 0;
