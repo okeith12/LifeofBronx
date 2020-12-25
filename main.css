@@ -25,7 +25,7 @@ body {
   font-family: "Lora", serif;
   font-size: 1rem;
   line-height: 1.6;
-  background: url("./img/bluebonnet.jpg") no-repeat center center fixed;
+  background: url("./img/bronx/bluebonnet.jpg") no-repeat center center fixed;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -104,9 +104,9 @@ header a {
 
 /* HERO */
 .hero {
-  background-image: url("./bronxlayingdown-54b1a7e6-432c-11eb-9363-de7711a50026.jpg");
+  background-image: url("./img/bronx/bronx_hero.webp");
   background-size: cover;
-  background-position: center 45%;
+  background-position: center 10%;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   color: var(--light-color);
@@ -139,7 +139,7 @@ header a {
   clear: both;
   width: 100%;
   height: 80vh;
-  background: url("./bronxeyes-06d2ba56-4327-11eb-9363-de7711a50026.jpg");
+  background: url("./img/bronx/bronxeyes.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 30%;
@@ -504,7 +504,7 @@ header a {
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
     ),
-    url("./img/testdog.jpg");
+    url("./img/bronx/bambina_about.webp");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -515,7 +515,7 @@ header a {
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
     ),
-    url("./img/tempbronxhero.jpg");
+    url("./img/bronx/thor_about.webp");
 }
 .family__card:nth-child(3) {
   background-image: linear-gradient(
@@ -523,17 +523,19 @@ header a {
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
     ),
-    url("./img/realbronxhero.jpg");
+    url("./img/bronx/bruno_about.webp");
 }
 .family__card h2 {
   position: absolute;
   top: 350px;
   left: 40px;
+  color: var(--light-color);
 }
 .family__card p {
   position: absolute;
   top: 400px;
   left: 20px;
+  color: var(--light-color);
 }
 .family__card:hover {
   transform: scale(1.095);
@@ -588,6 +590,11 @@ header a {
   align-items: center;
   object-fit: contain;
 }
+.video-section .video-nav ul:nth-child(1) {
+  object-position: center 10%;
+  object-fit: contain;
+}
+
 .video-section .video-nav li {
   list-style: none;
   cursor: pointer;
@@ -878,7 +885,10 @@ footer {
     width: 100%;
   }
   #hero {
-    background-position: 35% 100%;
+    background-position: 30% 100%;
+  }
+  .intro-text p {
+    font-size: 16px;
   }
   .carousel .carousel-item {
     object-fit: contain;
@@ -887,6 +897,9 @@ footer {
 
   .quote .intro-quote blockquote {
     font-size: calc((2.125 - 1) * 1.2vh + 1rem);
+  }
+  .about-hero {
+    height: 70vh;
   }
   .about-hero p {
     font-size: calc((2.125 - 1) * 0.5vh + 1rem);
@@ -913,12 +926,14 @@ footer {
     transition: 0.4s;
     color: var(--secondary-color);
   }
-
+  .timeline-container p {
+    font-size: 16px;
+  }
   .timeline__content-desc {
     font-size: 16px;
     line-height: 30px;
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     justify-content: center;
     width: 100%;
   }
