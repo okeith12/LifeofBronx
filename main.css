@@ -105,7 +105,7 @@ header a {
 
 /* HERO */
 .hero {
-  background-image: url("./img/bronx/bronx_hero.webp");
+  background-image: url("./img/bronx/finalbronx.jpg");
   background-size: cover;
   background-position: center 10%;
   background-blend-mode: multiply;
@@ -131,7 +131,7 @@ header a {
   clear: both;
   width: 100%;
   height: 80vh;
-  background: url("./img/bronx/bronxeyes.webp");
+  background: url("./img/bronx/bronxeyes-06d2ba56-4327-11eb-9363-de7711a50026.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 30%;
@@ -489,7 +489,7 @@ header a {
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
     ),
-    url("./img/bronx/bambina_about.webp");
+    url("./img/bronx/bambina_about.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -500,7 +500,7 @@ header a {
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
     ),
-    url("./img/bronx/thor_about.webp");
+    url("./img/bronx/thor_about.jpg");
 }
 .family__card:nth-child(3) {
   background-image: linear-gradient(
@@ -508,7 +508,7 @@ header a {
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
     ),
-    url("./img/bronx/bruno_about.webp");
+    url("./img/bronx/bruno_about.jpg");
 }
 .family__card h2 {
   position: absolute;
