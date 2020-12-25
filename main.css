@@ -117,21 +117,12 @@ header a {
 }
 .hero h1 {
   color: var(--light-color);
-  background-image: linear-gradient(
-    to top,
-    var(--light-color) 0%,
-    var(--bg-color) 100%
-  );
+
   text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation: pop-in 0.4s ease-out forwards;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .about-hero {
@@ -148,26 +139,16 @@ header a {
   clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0% 70%);
 }
 .about-hero h1 {
-  color: var(--primary-color);
-  background-image: linear-gradient(
-    to top,
-    var(--light-color) 0%,
-    var(--bg-color) 100%
-  );
+  color: var(--light-color);
   text-align: center;
   top: 50%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
   animation: fade 0.4s ease-in;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 .about-hero p {
-  color: var(--light-color);
+  color: var(--footer-color);
   line-height: 1em;
   width: 100% !important;
   display: flex;
@@ -178,7 +159,7 @@ header a {
 #intro {
   margin-top: 9vmax;
   min-height: 70vh;
-  color: var(--active-color);
+  color: var(--footer-color);
   position: relative;
 }
 #intro h1 {
@@ -204,7 +185,7 @@ header a {
   margin: 0;
   padding-bottom: 20px;
   font-size: 20px;
-  color: var(--primary-color);
+  color: var(--footer-color);
   font-weight: normal;
   justify-content: center;
   align-items: center;
@@ -397,14 +378,16 @@ header a {
   margin: 0;
   padding-bottom: 20px;
   font-size: 20px;
-  color: var(--secondary-color);
+  color: var(--footer-color);
   font-weight: normal;
   line-height: 25px;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
+.timeline-container p {
+  color: var(--footer-color);
+}
 .timeline-item {
   padding: 40px 0;
   opacity: 0.3;
